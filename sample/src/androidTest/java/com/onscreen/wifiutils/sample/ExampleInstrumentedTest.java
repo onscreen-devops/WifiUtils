@@ -1,4 +1,4 @@
-package com.thanosfisherman.wifiutils.sample;
+package com.onscreen.wifiutils.sample;
 
 import android.content.Context;
 
@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getContext();
 
-        assertEquals("com.thanosfisherman.wifiutils.sample", appContext.getPackageName());
+        assertEquals("com.onscreen.wifiutils.sample", appContext.getPackageName());
     }
 }

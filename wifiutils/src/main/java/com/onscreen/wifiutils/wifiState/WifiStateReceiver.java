@@ -1,4 +1,4 @@
-package com.thanosfisherman.wifiutils.wifiState;
+package com.onscreen.wifiutils.wifiState;
 
 
 import android.content.BroadcastReceiver;

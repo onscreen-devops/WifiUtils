@@ -1,4 +1,4 @@
-package com.thanosfisherman.wifiutils.wifiConnect;
+package com.onscreen.wifiutils.wifiConnect;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -10,12 +10,11 @@ import android.net.wifi.WifiManager;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import static com.thanosfisherman.wifiutils.utils.Elvis.of;
-import static com.thanosfisherman.wifiutils.ConnectorUtils.isAlreadyConnected;
-import static com.thanosfisherman.wifiutils.ConnectorUtils.isAlreadyConnected2;
-import static com.thanosfisherman.wifiutils.ConnectorUtils.reEnableNetworkIfPossible;
-import static com.thanosfisherman.wifiutils.WifiUtils.wifiLog;
-import static com.thanosfisherman.wifiutils.utils.VersionUtils.isAndroidQOrLater;
+import static com.onscreen.wifiutils.utils.Elvis.of;
+import static com.onscreen.wifiutils.ConnectorUtils.isAlreadyConnected;
+import static com.onscreen.wifiutils.ConnectorUtils.reEnableNetworkIfPossible;
+import static com.onscreen.wifiutils.WifiUtils.wifiLog;
+import static com.onscreen.wifiutils.utils.VersionUtils.isAndroidQOrLater;
 
 import java.util.Objects;
 

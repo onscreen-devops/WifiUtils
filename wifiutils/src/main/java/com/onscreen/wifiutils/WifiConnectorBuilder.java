@@ -1,4 +1,4 @@
-package com.thanosfisherman.wifiutils;
+package com.onscreen.wifiutils;
 
 import android.os.Build;
 
@@ -6,13 +6,13 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 
-import com.thanosfisherman.wifiutils.wifiConnect.ConnectionScanResultsListener;
-import com.thanosfisherman.wifiutils.wifiConnect.ConnectionSuccessListener;
-import com.thanosfisherman.wifiutils.wifiDisconnect.DisconnectionSuccessListener;
-import com.thanosfisherman.wifiutils.wifiRemove.RemoveSuccessListener;
-import com.thanosfisherman.wifiutils.wifiScan.ScanResultsListener;
-import com.thanosfisherman.wifiutils.wifiState.WifiStateListener;
-import com.thanosfisherman.wifiutils.wifiWps.ConnectionWpsListener;
+import com.onscreen.wifiutils.wifiConnect.ConnectionScanResultsListener;
+import com.onscreen.wifiutils.wifiConnect.ConnectionSuccessListener;
+import com.onscreen.wifiutils.wifiDisconnect.DisconnectionSuccessListener;
+import com.onscreen.wifiutils.wifiRemove.RemoveSuccessListener;
+import com.onscreen.wifiutils.wifiScan.ScanResultsListener;
+import com.onscreen.wifiutils.wifiState.WifiStateListener;
+import com.onscreen.wifiutils.wifiWps.ConnectionWpsListener;
 
 public interface WifiConnectorBuilder {
     void start();

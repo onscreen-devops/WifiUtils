@@ -1,4 +1,4 @@
-package com.thanosfisherman.wifiutils.utils;
+package com.onscreen.wifiutils.utils;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;

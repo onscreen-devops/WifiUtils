@@ -1,4 +1,4 @@
-package com.thanosfisherman.wifiutils.wifiScan;
+package com.onscreen.wifiutils.wifiScan;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

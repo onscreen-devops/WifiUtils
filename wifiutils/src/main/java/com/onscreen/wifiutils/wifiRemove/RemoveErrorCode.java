@@ -1,4 +1,4 @@
-package com.thanosfisherman.wifiutils.wifiRemove;
+package com.onscreen.wifiutils.wifiRemove;
 
 public enum RemoveErrorCode {
     COULD_NOT_GET_WIFI_MANAGER,

@@ -225,7 +225,7 @@ Add the following to your **app module** `build.gradle` file
     
 ```kotlin
     dependencies {
-       implementation("io.github.thanosfisherman.wifiutils:wifiutils:1.6.6")
+       implementation("io.github.onscreen.wifiutils:wifiutils:1.6.6")
     }
 ```
     

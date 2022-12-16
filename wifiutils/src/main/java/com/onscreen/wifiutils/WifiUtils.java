@@ -1,22 +1,22 @@
-package com.thanosfisherman.wifiutils;
+package com.onscreen.wifiutils;
 
 import static android.content.Intent.FLAG_ACTIVITY_NEW_TASK;
-import static com.thanosfisherman.wifiutils.ConnectorUtils.checkVersionAndGetIntent;
-import static com.thanosfisherman.wifiutils.ConnectorUtils.cleanPreviousConfiguration;
-import static com.thanosfisherman.wifiutils.ConnectorUtils.connectToWifi;
-import static com.thanosfisherman.wifiutils.ConnectorUtils.connectToWifiHidden;
-import static com.thanosfisherman.wifiutils.ConnectorUtils.connectWps;
-import static com.thanosfisherman.wifiutils.ConnectorUtils.disconnectFromWifi;
-import static com.thanosfisherman.wifiutils.ConnectorUtils.matchScanResult;
-import static com.thanosfisherman.wifiutils.ConnectorUtils.matchScanResultBssid;
-import static com.thanosfisherman.wifiutils.ConnectorUtils.matchScanResultSsid;
-import static com.thanosfisherman.wifiutils.ConnectorUtils.reenableAllHotspots;
-import static com.thanosfisherman.wifiutils.ConnectorUtils.registerReceiver;
-import static com.thanosfisherman.wifiutils.ConnectorUtils.removeWifi;
-import static com.thanosfisherman.wifiutils.ConnectorUtils.unregisterReceiver;
-import static com.thanosfisherman.wifiutils.utils.Elvis.of;
-import static com.thanosfisherman.wifiutils.utils.VersionUtils.isAndroidQOrLater;
-import static com.thanosfisherman.wifiutils.utils.VersionUtils.isLollipopOrLater;
+import static com.onscreen.wifiutils.ConnectorUtils.checkVersionAndGetIntent;
+import static com.onscreen.wifiutils.ConnectorUtils.cleanPreviousConfiguration;
+import static com.onscreen.wifiutils.ConnectorUtils.connectToWifi;
+import static com.onscreen.wifiutils.ConnectorUtils.connectToWifiHidden;
+import static com.onscreen.wifiutils.ConnectorUtils.connectWps;
+import static com.onscreen.wifiutils.ConnectorUtils.disconnectFromWifi;
+import static com.onscreen.wifiutils.ConnectorUtils.matchScanResult;
+import static com.onscreen.wifiutils.ConnectorUtils.matchScanResultBssid;
+import static com.onscreen.wifiutils.ConnectorUtils.matchScanResultSsid;
+import static com.onscreen.wifiutils.ConnectorUtils.reenableAllHotspots;
+import static com.onscreen.wifiutils.ConnectorUtils.registerReceiver;
+import static com.onscreen.wifiutils.ConnectorUtils.removeWifi;
+import static com.onscreen.wifiutils.ConnectorUtils.unregisterReceiver;
+import static com.onscreen.wifiutils.utils.Elvis.of;
+import static com.onscreen.wifiutils.utils.VersionUtils.isAndroidQOrLater;
+import static com.onscreen.wifiutils.utils.VersionUtils.isLollipopOrLater;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -34,24 +34,24 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 
-import com.thanosfisherman.wifiutils.wifiConnect.ConnectionErrorCode;
-import com.thanosfisherman.wifiutils.wifiConnect.ConnectionScanResultsListener;
-import com.thanosfisherman.wifiutils.wifiConnect.ConnectionSuccessListener;
-import com.thanosfisherman.wifiutils.wifiConnect.DisconnectCallbackHolder;
-import com.thanosfisherman.wifiutils.wifiConnect.TimeoutHandler;
-import com.thanosfisherman.wifiutils.wifiConnect.WifiConnectionCallback;
-import com.thanosfisherman.wifiutils.wifiConnect.WifiConnectionReceiver;
-import com.thanosfisherman.wifiutils.wifiDisconnect.DisconnectionErrorCode;
-import com.thanosfisherman.wifiutils.wifiDisconnect.DisconnectionSuccessListener;
-import com.thanosfisherman.wifiutils.wifiRemove.RemoveErrorCode;
-import com.thanosfisherman.wifiutils.wifiRemove.RemoveSuccessListener;
-import com.thanosfisherman.wifiutils.wifiScan.ScanResultsListener;
-import com.thanosfisherman.wifiutils.wifiScan.WifiScanCallback;
-import com.thanosfisherman.wifiutils.wifiScan.WifiScanReceiver;
-import com.thanosfisherman.wifiutils.wifiState.WifiStateCallback;
-import com.thanosfisherman.wifiutils.wifiState.WifiStateListener;
-import com.thanosfisherman.wifiutils.wifiState.WifiStateReceiver;
-import com.thanosfisherman.wifiutils.wifiWps.ConnectionWpsListener;
+import com.onscreen.wifiutils.wifiConnect.ConnectionErrorCode;
+import com.onscreen.wifiutils.wifiConnect.ConnectionScanResultsListener;
+import com.onscreen.wifiutils.wifiConnect.ConnectionSuccessListener;
+import com.onscreen.wifiutils.wifiConnect.DisconnectCallbackHolder;
+import com.onscreen.wifiutils.wifiConnect.TimeoutHandler;
+import com.onscreen.wifiutils.wifiConnect.WifiConnectionCallback;
+import com.onscreen.wifiutils.wifiConnect.WifiConnectionReceiver;
+import com.onscreen.wifiutils.wifiDisconnect.DisconnectionErrorCode;
+import com.onscreen.wifiutils.wifiDisconnect.DisconnectionSuccessListener;
+import com.onscreen.wifiutils.wifiRemove.RemoveErrorCode;
+import com.onscreen.wifiutils.wifiRemove.RemoveSuccessListener;
+import com.onscreen.wifiutils.wifiScan.ScanResultsListener;
+import com.onscreen.wifiutils.wifiScan.WifiScanCallback;
+import com.onscreen.wifiutils.wifiScan.WifiScanReceiver;
+import com.onscreen.wifiutils.wifiState.WifiStateCallback;
+import com.onscreen.wifiutils.wifiState.WifiStateListener;
+import com.onscreen.wifiutils.wifiState.WifiStateReceiver;
+import com.onscreen.wifiutils.wifiWps.ConnectionWpsListener;
 
 import org.jetbrains.annotations.NotNull;
 
@@ -361,7 +361,7 @@ public final class WifiUtils implements WifiConnectorBuilder,
             return;
         }
 
-        if (isAndroidQOrLater()) {
+        if (false) {
             DisconnectCallbackHolder.getInstance().unbindProcessFromNetwork();
             DisconnectCallbackHolder.getInstance().disconnect();
             removeSuccessListener.success();

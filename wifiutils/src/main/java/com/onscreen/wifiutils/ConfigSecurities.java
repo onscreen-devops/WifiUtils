@@ -1,4 +1,4 @@
-package com.thanosfisherman.wifiutils;
+package com.onscreen.wifiutils;
 
 import android.annotation.TargetApi;
 import android.net.wifi.ScanResult;
@@ -19,8 +19,8 @@ import java.util.Objects;
 
 import static android.Manifest.permission.ACCESS_FINE_LOCATION;
 import static android.Manifest.permission.ACCESS_WIFI_STATE;
-import static com.thanosfisherman.wifiutils.WifiUtils.wifiLog;
-import static com.thanosfisherman.wifiutils.utils.SSIDUtils.convertToQuotedString;
+import static com.onscreen.wifiutils.WifiUtils.wifiLog;
+import static com.onscreen.wifiutils.utils.SSIDUtils.convertToQuotedString;
 
 final class ConfigSecurities {
     static final String SECURITY_NONE = "OPEN";

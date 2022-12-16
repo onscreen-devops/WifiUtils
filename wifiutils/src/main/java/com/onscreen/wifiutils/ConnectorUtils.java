@@ -1,14 +1,14 @@
-package com.thanosfisherman.wifiutils;
+package com.onscreen.wifiutils;
 
 import static android.Manifest.permission.ACCESS_FINE_LOCATION;
 import static android.Manifest.permission.ACCESS_WIFI_STATE;
-import static com.thanosfisherman.wifiutils.WifiUtils.wifiLog;
-import static com.thanosfisherman.wifiutils.utils.Elvis.of;
-import static com.thanosfisherman.wifiutils.utils.SSIDUtils.convertToQuotedString;
-import static com.thanosfisherman.wifiutils.utils.VersionUtils.isAndroidQOrLater;
-import static com.thanosfisherman.wifiutils.utils.VersionUtils.isJellyBeanOrLater;
-import static com.thanosfisherman.wifiutils.utils.VersionUtils.isLollipopOrLater;
-import static com.thanosfisherman.wifiutils.utils.VersionUtils.isMarshmallowOrLater;
+import static com.onscreen.wifiutils.WifiUtils.wifiLog;
+import static com.onscreen.wifiutils.utils.Elvis.of;
+import static com.onscreen.wifiutils.utils.SSIDUtils.convertToQuotedString;
+import static com.onscreen.wifiutils.utils.VersionUtils.isAndroidQOrLater;
+import static com.onscreen.wifiutils.utils.VersionUtils.isJellyBeanOrLater;
+import static com.onscreen.wifiutils.utils.VersionUtils.isLollipopOrLater;
+import static com.onscreen.wifiutils.utils.VersionUtils.isMarshmallowOrLater;
 
 import android.annotation.SuppressLint;
 import android.content.BroadcastReceiver;
@@ -38,13 +38,13 @@ import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 import androidx.annotation.RequiresPermission;
 
-import com.thanosfisherman.wifiutils.utils.SSIDUtils;
-import com.thanosfisherman.wifiutils.utils.VersionUtil;
-import com.thanosfisherman.wifiutils.utils.VersionUtils;
-import com.thanosfisherman.wifiutils.wifiConnect.ConnectionErrorCode;
-import com.thanosfisherman.wifiutils.wifiConnect.DisconnectCallbackHolder;
-import com.thanosfisherman.wifiutils.wifiConnect.WifiConnectionCallback;
-import com.thanosfisherman.wifiutils.wifiWps.ConnectionWpsListener;
+import com.onscreen.wifiutils.utils.SSIDUtils;
+import com.onscreen.wifiutils.utils.VersionUtil;
+import com.onscreen.wifiutils.utils.VersionUtils;
+import com.onscreen.wifiutils.wifiConnect.ConnectionErrorCode;
+import com.onscreen.wifiutils.wifiConnect.DisconnectCallbackHolder;
+import com.onscreen.wifiutils.wifiConnect.WifiConnectionCallback;
+import com.onscreen.wifiutils.wifiWps.ConnectionWpsListener;
 
 import java.util.Collections;
 import java.util.List;

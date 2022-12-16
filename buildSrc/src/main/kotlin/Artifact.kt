@@ -5,7 +5,7 @@ import kotlin.collections.LinkedHashMap
 object Artifact {
 
     val ARTIFACT_NAME = "wifiutils"
-    val ARTIFACT_GROUP = "io.github.thanosfisherman.wifiutils"
+    val ARTIFACT_GROUP = "io.github.onscreen.wifiutils"
     val VERSION_NAME = "1.6.6"
     val VERSION_CODE = 23
     val POM_URL = "https://github.com/ThanosFisherman/WifiUtils"
@@ -25,7 +25,7 @@ object Artifact {
     val POM_LICENSE_URL = "http://www.apache.org/licenses/LICENSE-2.0.txt"
     val POM_LICENSE_DIST = "http://www.apache.org/licenses/LICENSE-2.0.txt"
 
-    val POM_DEVELOPER_ID = "thanosfisherman"
+    val POM_DEVELOPER_ID = "onscreen"
     val POM_DEVELOPER_NAME = "Thanos Psaridis"
     val DEVELOPER_EMAIL = "psaridis@gmail.com"
 
